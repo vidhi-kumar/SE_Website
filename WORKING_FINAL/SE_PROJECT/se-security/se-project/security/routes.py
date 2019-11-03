@@ -79,7 +79,7 @@ def login():
         if user:
             login_user(user, remember=form.remember.data)
             # next_page = request.args.get('next')
-            return redirect(url_for('dashboard'))
+            return redirect(url_for('home'))
         else:
             flash('Unsuccessful Login! Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
