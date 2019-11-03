@@ -12,6 +12,10 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password',
                                     validators=[DataRequired(), EqualTo('password')])
+    type_force = StringField('Type of Force',
+                            validators=[DataRequired(), Length(min=2, max=20)])
+    units = StringField('Required Units',
+                            validators=[DataRequired(), Length(min=2, max=20)])    
     submit = SubmitField('Sign Up')
 
 def validate_field(self, username):
