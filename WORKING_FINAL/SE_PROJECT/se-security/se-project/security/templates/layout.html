@@ -7,20 +7,33 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
     <style>
     body{
-          background: #342c74;
+          background: #8bf0ba;
             /* background: url("sec.jpg");
             background-size: cover; */
-            color: white;
+            /* color: white; */
         }
         .navbar-dark .navbar-nav .active > .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active:hover, .navbar-dark .navbar-nav .nav-link.show:hover, .navbar-dark .navbar-nav .show > .nav-link:hover{
-          background: chocolate;
-          /* color: black; */
+          border-bottom: 2px solid red;
+          background: transparent;
+          color: red;
           transition: .5s ease-in-out;
 
         }
         .bg-dark {
-    background-color:coral !important;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bolder;
+    background-color:#8bf0ba !important;
+    color: #0e0fed;
 }
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link
+{
+  color: slateblue ;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  /* font-weight: 500; */
+  font-family: 'Montserrat', sans-serif;
+          
+}
+
         *{
             margin: 0px;
             padding:0px;
